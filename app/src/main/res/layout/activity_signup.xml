@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".signup">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Shoe define you who you are . "
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/gothic_regular"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO KOOLKICKS"
+        android:fontFamily="@font/gothic_regular"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:layout_gravity="center"
+        android:hint="Email"
+        android:id="@+id/email"
+        android:textSize="17dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/gothic_regular"
+        android:background="@drawable/edittext_style"
+        android:singleLine="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:id="@+id/pass"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:textSize="17dp"
+        android:fontFamily="@font/gothic_regular"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_style"
+        android:singleLine="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/cpass"
+        android:layout_gravity="center"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:textSize="17dp"
+        android:fontFamily="@font/gothic_regular"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_style"
+        android:singleLine="true"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:hint="Sign Up"
+        android:id="@+id/btn_signup"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textColorHint="#000"
+        android:background="@drawable/edittext_style"
+        android:fontFamily="@font/gothic_regular"
+        android:layout_marginTop="30dp"
+        android:singleLine="true"/>
+
+
+
+</LinearLayout>
