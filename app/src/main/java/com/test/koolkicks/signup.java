@@ -25,7 +25,6 @@ import java.util.Map;
 
 public class signup extends AppCompatActivity {
     Button btn_singup;
-    EditText reg_name;
     EditText reg_email;
     EditText reg_password;
     EditText reg_conf_pwd;
@@ -65,7 +64,6 @@ public class signup extends AppCompatActivity {
                                 Toast.makeText(signup.this, "Sorry,this user exists", Toast.LENGTH_SHORT).show();
                             } else {
                                 Map<String, Object> reg_entry = new HashMap<>();
-                                reg_entry.put("Name", reg_name.getText().toString());
                                 reg_entry.put("Email", reg_email.getText().toString());
                                 reg_entry.put("Password", reg_password.getText().toString());
 
@@ -75,6 +73,8 @@ public class signup extends AppCompatActivity {
                                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                             @Override
                                             public void onSuccess(DocumentReference documentReference) {
+                                                finish();
+                                                startActivity(new Intent(signup.this,MainActivity.class));
                                                 Toast.makeText(signup.this, "Successfully sign up", Toast.LENGTH_SHORT).show();
                                             }
                                         })
