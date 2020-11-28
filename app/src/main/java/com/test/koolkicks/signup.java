@@ -66,8 +66,6 @@ public class signup extends AppCompatActivity {
                                 Map<String, Object> reg_entry = new HashMap<>();
                                 reg_entry.put("Email", reg_email.getText().toString());
                                 reg_entry.put("Password", reg_password.getText().toString());
-
-                                //   String myId = ref.getId();
                                 firebaseFirestore.collection("users")
                                         .add(reg_entry)
                                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
